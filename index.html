@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    
   
     <meta name="theme-color" content="#fafafa">
   </head>
@@ -15,16 +17,23 @@
   <body class="page page-home">
       <header class="page__header">
           <div class="row m-1-2">
+            <nav class="mobile-nav m-hide l-hide">
+              mobile menu
+            </nav>
               <div class="column">
-                <p>logo Here</p>
+                <img class="logo" src="./placeholder.svg">
               </div>
-              <div class="column">
-                <p>menu Here</p>
-              </div>
+              <nav class="column main-nav">
+                <a href="#" class="main-nav__item active">home</a>
+                <a href="#" class="main-nav__item active">pages</a>
+                <a href="#" class="main-nav__item active">blog</a>
+                <a href="#" class="main-nav__item active">Portfolio</a>
+                <a href="#" class="main-nav__item active">contact</a>
+              </nav>
           </div>
       </header>
    
-      <div class="slider">
+      <div class="page__slider s-hide">
           <div class="row">
               <div class="row">
                   <div class="column">
@@ -37,46 +46,65 @@
       <div class="page__intro">
           <div class="row">
               <h1 class="heading">
-                  Hey guys! Main intro heading here!<br>
-                  It is a responsive layout.
+                  Hey guys! This is the <strong>Metrolics</strong> theme.<br>
+                  It sports a responsive layout with a mobile layout
               </h1>
           </div>
       </div>
   
       <section class="about">
           <div class="row l-col-4">
-              <div class="column span-full">
-                  <h2 class="heading">
-                      Things that we do!
-                  </h2>
-              </div>
-              <div class="column">
-                  <h3 class="headomg">subheading</h3>
-              </div>
-              <div class="column">
-                  <h3 class="headomg">subheading</h3>
-              </div>
-              <div class="column">
-                  <h3 class="headomg">subheading</h3>
-              </div>
-              <div class="column">
-                  <h3 class="headomg">subheading</h3>
+              <div class="column row-span">
+                <h2 class="heading">
+                  Things that we do
+              </h2>
+              <p class="tagline">
+                  Ask us what we can do for you 
+              </p>
+          </div>
+          <div class="column">
+              <h3 class="heading">web solutions</h3>
+              <p>
+                  We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs.
+              </p>
+          </div>
+          <div class="column">
+              <h3 class="heading">photography</h3>
+              <p>
+                  We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs.
+              </p>
+          </div>
+          <div class="column">
+              <h3 class="heading">web development</h3>
+              <p>
+                  We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs.
+              </p>
+          </div>
+          <div class="column">
+              <h3 class="heading">web design</h3>
+              <p>
+                  We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs.
+              </p>
               </div>
           </div>
       </section>
   
       <section class="projects--new">
           <div class="row m-col-2 l-col-3">
-              <div class="column span-full">
+              <div class="column row-span">
                   <h2 class="heading">
-                      Our latest projects
+                      Whats up Lately?
                   </h2>
+                  <p class="tagline">
+                    Read up on our latest work
+                  </p>
               </div>
-              <div class="column resize-pro">
+              <div class="column special-project"> 
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -84,7 +112,8 @@
                   <figure class="project">
                   <img src="/placeholder.svg" alt="placeholder">
                   <figcaption class="project__caption">
-                      <h3 class="heading">project title</h3>
+                      <h3 class="heading">sample image post</h3>
+                      <p>photography</p>
                   </figcaption>
                   </figure>
           </div> <!-- proj col ends here -->
@@ -92,7 +121,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -100,7 +130,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -108,7 +139,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -116,25 +148,31 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
           </div>
       </section> <!-- projects-new ends here -->
-  
+      <hr>
       <section class="projects">
           <div class="row m-col-2 l-col-3">
-              <div class="column span-full">
+              <div class="column row-span">
                   <h2 class="heading">
                       Our latest projects
                   </h2>
+                  <p class="tagline">
+                    Client happy? we are happy.
+                  </p>
+                  
               </div>
               <div class="column">
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -142,7 +180,8 @@
                   <figure class="project">
                   <img src="/placeholder.svg" alt="placeholder">
                   <figcaption class="project__caption">
-                      <h3 class="heading">project title</h3>
+                      <h3 class="heading">sample image post</h3>
+                      <p>photography</p>
                   </figcaption>
                   </figure>
           </div> <!-- proj col ends here -->
@@ -150,7 +189,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -158,7 +198,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -166,7 +207,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -174,7 +216,8 @@
                   <figure class="project">
                       <img src="/placeholder.svg" alt="placeholder">
                       <figcaption class="project__caption">
-                          <h3 class="heading">project title</h3>
+                          <h3 class="heading">sample image post</h3>
+                          <p>photography</p>
                       </figcaption>
                   </figure>
               </div> <!-- proj col ends here -->
@@ -183,16 +226,20 @@
   
       <section class="thingsofabove">
           <div class="row l-col-2">
-              <div class="column span-full">
+              <div class="column row-span">
                   <h2 class="heading">
                       Thingsofabouve
                   </h2>
+                  <p class="tagline">
+                    This is a tagline right beneath the h2 heading.
+                </p>
+
               </div>
               <div class="column">
-                  <p>GUI element here</p>
+                  <p>Sample accordian menu</p>
               </div>
               <div class="column">
-                  <p>GUI element here</p>
+                  <p>tab menu</p>
               </div>
           </div>
       </section>
@@ -217,30 +264,68 @@
           </div>
       </div>
   
-      <footer class="footer">
-          <div class="row m-col-2 1-col-4">
-              <div class="page__footer__intro column span-full">
-                  <h3 class="heading">
+      <footer class="page__footer">
+          <div class="row m-col-2 1-col-4 row-no-margin">
+              <div class="page__footer__intro column row-span">
+                  <h3 class="heading inverted">
                       Pewee Herman Intro
                   </h3>
+                  <p class="inverted">Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
               </div>
-              <div class="column">
-                  <h4>footer subheading</h4>
-              </div>
-              <div class="column">
-                  <h4>footer subheading</h4>
-              </div>
-              <div class="column">
-                  <h4>footer subheading</h4>
-              </div>
-              <div class="column">
-                  <h4>footer subheading</h4>
+              <div class="column about-us s-hide">
+                <h4 class="inverted">About Us</h4>
+                <p class="inverted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur, excepturi alias error sequi dolor quam minima. Quas cumque mollitia cupiditate aut perferendis blanditiis magni reiciendis dolores eius. Molestiae, sit.
+                </p>
+            </div>
+            <div class="column flickr s-hide">
+              <h4 class="inverted">Flickr Photos</h4>
+              <div class="sub-grid m-col-3">
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
+                  <div class="column">
+                      <img src="./placeholder.svg" alt="placeholder">
+                  </div>
               </div>
           </div>
-        </footer>
-  
-    <hr>
-  
+          <div class="column soc-msgs">
+              <h4 class="inverted">Recent Tweets</h4>
+              <ul class="twts">
+                  <li class="twts__item inverted">
+                      <span class="twts__item__tag">
+                          <a href="#">#minions</a> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat dolore debitis necessitatibus rerum aut natus vitae quos quaerat delectus facilis harum quasi voluptatum, repellendus amet explicabo numquam voluptatibus? Nostrum!
+                      </span>
+                  </li>
+                  <li class="twts__item inverted">
+                      <span class="twts__item__tag">
+                          <a href="#">#minions</a> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat maiores rem, blanditiis omnis minus unde ipsam ullam cum atque excepturi debitis maxime facilis dolor laudantium nesciunt sit consequatur saepe earum.
+                      </span>
+                  </li>
+              </ul>
+          </div>
+          <div class="column newsletter s-hide">
+              <h4 class="inverted">Newsletter</h4>
+              <p class="inverted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium maiores eos officiis ab alias iure facilis, magnam soluta unde quos itaque vero molestias repellendus quaerat sed rem quasi, dolores tempore.
+          </div>
+      </div>
+  </footer>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
   </body>
 
 </html>
@@ -544,7 +629,6 @@
     </article>
   </footer>
 </body> -->
-
 
 
 
