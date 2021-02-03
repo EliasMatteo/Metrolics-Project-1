@@ -1,14 +1,134 @@
 
 
+/* Base styles------------------->*/
+
+html{
+  color: #222;
+  font-family: 'Open sans' ,Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0px;
+}
+
+
+img {
+  width: 100%;
+}
+
+h1{
+  color: #000;
+}
+
+/* Layout----------------------> */
+
+div,section,footer,header {
+  border: 1px solid #ccc;
+}
+
+.heading {
+  text-align: center;
+}
+
+.column {
+  background-color:tan ;
+  margin: 1rem;
+}
 
 
 
+/* Small only  meant for mobile and only for these devices*/
+@media screen and (max-width: 39.9375em) {
+
+}
+/* Medium and up meant for tablets and sizes larger than usual*/
+@media screen and (min-width: 40em) {
+  .row {
+    display: grid;
+    width: 85vw;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .m-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .m-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .span-full {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+
+}
+/* Medium only meant only for a specific size of tablet no deviation  */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .resize-pro {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  
+
+}
+/* Large and up meant for anything beyond the 'medium' sizes most likely full desktop screens */
+@media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+
+}
+/* Large only meant for only a particualr size of large screen*/
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+}
 
 
 
+/* Theme and colors --------------------->*/
+
+.footer {
+  background-color:#222 ;
+}
 
 
-
+.slider {
+  background-color:rgb(196, 191, 191) ;
+}
 
 
 
