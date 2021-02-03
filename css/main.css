@@ -29,9 +29,6 @@ hr {
 
 /* Layout----------------------> */
 
-/* div,section,footer,header {
-  border: 1px solid #ccc;
-} */
 
 .row {
   display: grid;
