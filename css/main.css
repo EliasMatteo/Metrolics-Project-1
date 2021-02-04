@@ -24,9 +24,14 @@ h1{
 hr {
   width: 1100px;
   border-top: 1px solid #1eafde;
-    
+  
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  
+}
 /* Layout----------------------> */
 
 
@@ -67,6 +72,9 @@ hr {
   position: absolute;
   bottom: 0;
 }
+
+
+
 
 /* main nav mobile first */
 .main-nav {
@@ -149,21 +157,33 @@ hr {
     margin: 0 auto 3rem auto;
   }
 
-  .m-col-2 {
+  .m-col-1 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .m-col-2 {
+    grid-area: content;
+  
+    grid-template-areas:
+      "content content content"
+      "content content content";
+
+      align-items:center;
+  }
+
   .m-col-3 {
+    grid-area: area;
+    grid-template-areas: 
+    "area area area area area";
+    align-items: center;
+  }
+  /* .m-col-2 {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
-  .m-col-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .m-col-5 {
+  /* .m-col-3 {
     grid-template-columns: repeat(5, 1fr);
-  }
+  } */
 
   .m-1-2 {
     grid-template-columns: 1fr 2fr;
@@ -218,25 +238,40 @@ hr {
 }
 /* Large and up meant for anything beyond the 'medium' sizes most likely full desktop screens */
 @media screen and (min-width: 64em) {
-  .l-col-2 {
+  
+  .test {
+    height: 265px;
+  }
+  
+  
+  .l-col-1 {
     grid-template-columns: 1fr 1fr;
+  }
+  
+  .l-col-2 {
+    grid-area: content;
+  
+    grid-template-areas:
+      "content content content"
+      "content content content";
+
+      align-items:center;
   }
 
   .l-col-3 {
+    grid-area: area;
+    grid-template-areas: 
+    "area area area area";
+    align-items: center;
+  }
+
+  /* .l-col-2 {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
 
-  .l-col-4 {
+  /* .l-col-3 {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .l-col-5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .l-col-6 {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  } */
 
   .l-hide {
     display: none;
